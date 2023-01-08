@@ -38,12 +38,24 @@ function App() {
   return (
     <div className="">
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <div className="py-3">
+        <form className="flex justify-between">
+          <input className="border-[#637381]-600 border-2  bg-[#F9F9FB] rounded" type="text" placeholder=" Product Name or SKU" />
+          <input type="text" placeholder="Vendor Name or Vendor SKU" />
+          <input type="text" placeholder="On Sale" />
+          <input type="text" placeholder="Stock Status" />
+          <input type="text" placeholder="Product Status" />
+          <input type="text" placeholder="mm/dd/yy - mm/dd/yy" />
+          <button className="rounded bg-[#021E4A] text-white p-2">Apply</button>
+        </form>
+      </div>
+
       {loading ? (
         <h4>Loading ...</h4>
       ) : (
-        <>
-          <Table data={tableData} />
-          <Pagination data={paginationData} page={setPage} currentPage={page} />
+          <>
+            <Table data={tableData} />
+            <Pagination data={paginationData} page={setPage} currentPage={page} />
         </>
       )}
     </div>

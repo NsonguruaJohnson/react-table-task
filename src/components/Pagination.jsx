@@ -20,7 +20,7 @@ export default function Pagination({ data, page, currentPage }) {
               key={i}
               onClick={() => page(el)}
               className={`${
-                currentPage && {activePage} // this is not working , dunno why
+                currentPage === el ? 'bg-[#ADC3E9]' : ''
               } cursor-pointer border border-[#ADC3E9] w-[35px] py-2`}
             >
               {el}
@@ -54,8 +54,8 @@ export default function Pagination({ data, page, currentPage }) {
           Next
         </li>
       </ul>
-      <p>current {currentPage} total {totalPage} he</p>
-      {<p>check {(currentPage === 5)}</p>} 
+      {/* <p>current {currentPage} total {totalPage} he</p> */}
+      {/* {<p>check {(currentPage === 5)}</p>}  */}
     </div>
   );
 }

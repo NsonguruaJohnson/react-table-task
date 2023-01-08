@@ -1,8 +1,8 @@
 export default function Table({ data }) {
   return (
-    <table>
-      <thead className="">
-        <tr>
+    <table  className="table-fixed border-spacing-10">
+      <thead className="bg-[#E8F4FF]">
+        <tr className="">
           <th>
             <input type="checkbox" name="" id="" />
           </th>
@@ -15,7 +15,7 @@ export default function Table({ data }) {
           <th>Vendor</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="px-10">
         {data?.length > 0 &&
           data?.map((el, i) => (
             <tr key={i}>
