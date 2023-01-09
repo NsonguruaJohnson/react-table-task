@@ -26,24 +26,6 @@ export default function Pagination({ data, page, currentPage }) {
               {el}
             </li>
           ))}
-        {/* <li
-          onClick={() => page(2)}
-          className="cursor-pointer border border-[#ADC3E9] w-[35px] py-2"
-        >
-          2
-        </li>
-        <li
-          onClick={() => page(3)}
-          className="cursor-pointer border border-[#ADC3E9] w-[35px] py-2"
-        >
-          3
-        </li>
-        <li
-          onClick={() => page(4)}
-          className="cursor-pointer border border-[#ADC3E9] w-[35px] py-2"
-        >
-          4
-        </li> */}
         <li
           onClick={() => page(currentPage + 1)}
           disabled={currentPage === totalPage}

@@ -36,8 +36,8 @@ export default function Table({ data }) {
               <td className="py-4">                
                 <div className="flex-col text-left px-4">
                   <h4>{el.name}</h4>
-                  <p className="text-gray-400">loremmmmm</p>
-                  <p className="text-gray-400">lllllllllllll</p>
+                  <p className="text-gray-400">&nbsp;</p>
+                  <p className="text-gray-400">&nbsp;</p>
                 </div>
               </td>
               {/* <td>{el.name}</td> */}
