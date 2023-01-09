@@ -37,8 +37,8 @@ function App() {
 
   return (
     <div className="">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <div className="py-3">
+      {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
+      {/* <div className="py-3">
         <form className="flex">
           <input className="border-[#637381]-600 border-2  bg-[#F9F9FB] rounded flex-col" type="text" placeholder=" Product Name or SKU" />
           <input className="flex-col" type="text" placeholder="Vendor Name or Vendor SKU" />
@@ -47,6 +47,19 @@ function App() {
           <input className="flex-col" type="text" placeholder="Product Status" />
           <input className="flex-col" type="text" placeholder="mm/dd/yy - mm/dd/yy" />
           <button className="flex-col rounded bg-[#021E4A] text-white p-2">Apply</button>
+        </form>
+      </div> */}
+
+      <div className="py-3">
+        <form className="grid grid-cols-7 gap-2">
+          <input className="border-[#637381]-600 border-2  bg-[#F9F9FB] rounded" type="text" placeholder=" Product Name or SKU" />
+          <input className="" type="text" placeholder="Vendor Name or Vendor SKU" />
+          {/* <input className="" type="text" placeholder="On Sale" /> */}
+          <select name="" id="">On Sale</select>
+          <input className="" type="text" placeholder="Stock Status" />
+          <input className="" type="text" placeholder="Product Status" />
+          <input className="" type="text" placeholder="mm/dd/yy - mm/dd/yy" />
+          <button className="rounded bg-[#021E4A] text-white p-2">Apply</button>
         </form>
       </div>
 
