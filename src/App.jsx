@@ -39,14 +39,14 @@ function App() {
     <div className="">
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <div className="py-3">
-        <form className="flex justify-between">
-          <input className="border-[#637381]-600 border-2  bg-[#F9F9FB] rounded" type="text" placeholder=" Product Name or SKU" />
-          <input type="text" placeholder="Vendor Name or Vendor SKU" />
-          <input type="text" placeholder="On Sale" />
-          <input type="text" placeholder="Stock Status" />
-          <input type="text" placeholder="Product Status" />
-          <input type="text" placeholder="mm/dd/yy - mm/dd/yy" />
-          <button className="rounded bg-[#021E4A] text-white p-2">Apply</button>
+        <form className="flex">
+          <input className="border-[#637381]-600 border-2  bg-[#F9F9FB] rounded flex-col" type="text" placeholder=" Product Name or SKU" />
+          <input className="flex-col" type="text" placeholder="Vendor Name or Vendor SKU" />
+          <input className="flex-col" type="text" placeholder="On Sale" />
+          <input className="flex-col" type="text" placeholder="Stock Status" />
+          <input className="flex-col" type="text" placeholder="Product Status" />
+          <input className="flex-col" type="text" placeholder="mm/dd/yy - mm/dd/yy" />
+          <button className="flex-col rounded bg-[#021E4A] text-white p-2">Apply</button>
         </form>
       </div>
 
